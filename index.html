@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body class="body-main">
+
+    <!-- navbar -->
+    <header class="navbar">
+        <div class="navbar-logo">
+            <a href="#">UwUzon</a>
+        </div>
+
+        <div class="navbar-search">
+            <input type="text" placeholder="Search for products, brands, and more">
+            <button>Search</button>
+        </div>
+
+        <div class="navbar-links">
+            <a href="#">Sign In</a>
+            <a href="#" id="cart-count">Cart (0)</a>
+        </div>
+    </header>
+
+    <!-- main body -->
+    <div class="body">
+        <div class="cart-items">
+            <p style="font-size: 1.6rem; font-weight: 400; margin-bottom: 10px; height: auto;">Shopping cart</p>
+            <hr>
+ 
+                <div id="cart-items-container">
+                    <div class="item-image">
+                        <img src="https://m.media-amazon.com/images/I/51IQ+xDrilL._AC_AA360_.jpg" alt="image">
+                    </div>
+                    <div class="item-details">
+                        <h1>LaptopGodrej 1 Ton 3 Star, 5-In-1 Convertible Cooling, Inverter Split AC (Copper, I-Sense
+                            Technology, 2023 Model, AC 1T EI 12TINV3R32-GWA Split, White)</h1>
+                        <p>In stock</p>
+                        <img style="height: 17px; width: 52px;"
+                            src="https://m.media-amazon.com/images/G/31/marketing/fba/fba-badge_18px._CB485936079_.png"
+                            alt="">
+                        <form action="" style="display: flex; flex-direction: row; font-size: small; gap: 5px;">
+                            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                            <label for="vehicle1" style="display: flex; gap: 2px;"> This will be a gift <a href="#"
+                                    style="color: rgb(91, 91, 253);">(learn more)</a></label>
+                        </form>
+                        <div class="item-actions">
+                            <div class="item-add-delete">
+                                <i class="fa-solid fa-trash"></i>
+                                <p style="color: black;">1</p>
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                            <a href="#">Delete</a>
+                            <a href="#">Save for later</a>
+                            <a href="#">See more like this</a>
+                            <a href="#">Share</a>
+                        </div>
+                    </div>
+                    <div class="item-price">
+                        ₹&nbsp31,000
+                    </div>
+                </div>
+            <hr>
+            <div class="TotalPrice">
+                Subtotal (1 item):&nbsp&nbsp <p>₹31,000</p>
+            </div>
+        </div>
+
+        <!-- right body -->
+        <div class="right-body">
+            <div class="item-price">
+                <div class="first-line">
+                    <div class="progress-bar">
+
+                    </div>
+                    <p>₹31,000</p>
+                </div>
+
+                <div class="free-delivery">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAzBJREFUSEvFlktoVGcUx39nHlkoim3FOHd8RIpSq1uxugiCLrVFkGByp6kbFaoWFSmtbor4gvjAxya6aA1zxweULqSrFtwIlqZ2o9iIb8y9k/goIpbKxLlH7o0T587cm5lJAt7l/c7//zvn43zfd4T39Ml74tIY+CJxCsZniLaApPykFYeY3Cdh/0kbxXoLqQ9szZoP7vfAWmBahPkz4BcoHsQcvFcrgdHB3cYkJnMI4WsgXsvs7XoB1S6aPthL281ClCYabKXmgvwKLKoTWBEmvRRfr6Zz8HGYPhx8PrWQolwBPhwb9K1KsBGW0e48qvSpBudmNEPiGkp6XNCSWPkHt7iEzsH/yv2qwVnjAkLbhEBHTOQ4pr09GpwzPsHLcOK/Am6yhS8f5kvWwYqt1FmQzjFy/0b0HirrwvVyANPeUw2++GkTQ8+fAlMaB+t1kvEVMPUlQ89/A1pDPB5gOvOqwdn0SkR/bxgqcoMhVvCV7V0gkDO2oZwI94ktwOy/7a2922orvQH0xwbBfSTdVtoGnvg6K90J+lPAN9hRn9PhXKoAG7uArhDw/xBbh7qHERaWrd8h6S4fgWZTGxHpjoT6Qt2OmT8eBOfSO1E9UgFWhC/8LHuaZxCPe5fKfOAObrJ1pEuzxhaEU7V3S3Zi2scqwEY7Sq4KjGzAtHv8/+eM2SgWrnSQsfuHt9fYCpysDfVfsvVknAtBcDbtPXdXQw1UN5HJn6las9I7QI/WBfWCYrqE9vxfQbC3qTnDa5KPIoy2YTrvttOK7IlwuTKA6RgIGgQPd2U36KbICoRv6XC6sFK7QfbXXanfV5wk43xT0gRvrvPpBRS1b/TOxDvrqxqCgkvM/Zj2gQfh4OFmyQJmg8Y1wuU0pr25PCjkWTSmo/QCLRME70NfLSXz74vRwX7V/oz1x7gHAXBQWTpy9MrI0aPPuZktaPwSqovHWPk13OSa8qewdsWliJ7mySQS+1D1ujFWZwIFlEM0Tds/tmGvnOINCPAd6o+3UyMSeAbyM7gHMPMPayVZ31xdcrlMgv7UMmLMCQz08dhdbvX38gNuLWD0capXOc64xioeJ6xc/gaJWfgfUEcWngAAAABJRU5ErkJggg=="/>
+                    <div style="display: flex; flex-direction: column;">
+                        <p style="color: green;">Your order is eligible for FREE Delivery.</p>
+                        <p> Choose <a href="#" style="color: blue;">FREE Delivery</a> option at checkout.</p>
+                    </div>
+                </div>
+
+                <div class="second-line">
+                    Subtotal (1 item):&nbsp&nbsp ₹31,000
+                    <form action="" style="display: flex; flex-direction: row; font-size: small; gap: 5px;">
+                        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                        <label for="vehicle1" style="display: flex; gap: 2px;"> This order contains a gift </label>
+                    </form>
+                </div>
+
+                <div class="buy-btn">
+                    Proceed to buy
+                </div>
+
+                <div class="drop-box" style="font-weight: 400; font-size: medium;">
+                    EMI Available
+                    <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAASxJREFUSEvt070uBkEUxvHfS6GWCGqNhEZNfETpAlyBAhWlzh1Q0XMVEvEVcQciGgmhIBK9RNhJZpM3knd3x74+ErvV7Mw5z3/OM+e0/NLX+iWuBvxjzjdWN1Z/mwN/vrmmcY73Egt6MBljC0OrVDyPA+xhqQAetPaxiAUcFpHLwL0Z7B7DUWQXqx0Ew9lyPLvLLjqCt07wMnDIm8AR+gvgO1iJ5y8IT3NZp+I8dxwnGIgb21iP6y2sxfVzFjdXBg2xVSrO4WM4xmDc2EQfNuL/U4ReVZnBFHDQG8Uphj6JP2aXmsV1FWhqxblmaJqLNvhD1gMzuKkK/So45AX4WQRN4TYFWgecw1/juKVyk5orWbwb49RVaF2ra10mdZxqwdqTG3DXrCwT+n9WfwASoyUfKwuzAgAAAABJRU5ErkJggg==" />
+                </div>
+            </div>
+            <div class="related-items">
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
